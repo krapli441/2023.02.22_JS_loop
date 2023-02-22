@@ -9,14 +9,13 @@
 <body>
   <div id="root"></div>
   <script>
-    let root = document.getElementById('root');
+    
+    for(let i = 2; i <= 9; i++) {
+      for(let j = 1; j <= 9; j++) {
+        console.log(i + '*' + j + '=' + (i*j));
+      } 
+    } 
 
-    for (i = 2; i <= 15; i++) {
-      for (j = 2; j < 9; j++) {
-      console.log(i + '*' + j + '=' + (i*j));
-      root.innerHTML += (i + '*' + j + '=' + (i*j) + "<br>");
-    }
-    }
   </script>
 </body>
 </html>

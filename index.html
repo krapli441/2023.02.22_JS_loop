@@ -9,12 +9,19 @@
 <body>
   <div id="root"></div>
   <script>
+    let colors = ["red", "blue", "yellow", "green", "purple", "brown", "orange", "tomato", "darkgreen"];
     let pokemon = ["피카츄", "라이츄", "파이리", "꼬부기","버터풀","또도가스","리자몽","질뻐기","스라크"];
+
     let root = document.getElementById('root');
+
     for (let i = 0; i < pokemon.length; i++) {
       let li = document.createElement("li");
       li.textContent = pokemon[i];
+      li.style.color=colors[i];
       root.appendChild(li);
+    }
+    for (let i = 0; i < colors.length; i++) {
+      console.log(colors[i]);
     }
   </script>
 </body>

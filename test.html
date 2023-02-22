@@ -9,6 +9,7 @@
 <body>
   <div id="root"></div>
   <script>
+    let colors = ["red", "blue", "yellow", "green", "purple", "brown", "orange", "tomato", "darkgreen"];
     let student = [
     "강지민",
     "곽윤호",
@@ -45,13 +46,14 @@
     for(let i = 0; i < student.length; i++) {
       let li = document.createElement("li");
       li.textContent = student[i];
+      li.style.color=colors[i];
       root.appendChild(li);
     }
 
-    let colors = Math.random() * 0xffffff;
-    colors = parseInt(colors);
-    colors = colors.toString(16);
-    let colorcode = "#" + colors;
+    // let colors = Math.random() * 0xffffff;
+    // colors = parseInt(colors);
+    // colors = colors.toString(16);
+    // let colorcode = "#" + colors;
 
   </script>
 </body>
